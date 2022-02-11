@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
+
+
 {
     margin: 0;
     padding: 0;
@@ -79,11 +81,41 @@ section::before
     z-index: 1000;
 }
 
-section#footerimg
+#footerimg
 {
-    background-image: url("assets/img/background2.png");
-    /*background:linear-gradient(to top,#000000,transparent);*/
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    background-image: url("assets/img/background22.png");
+}
+
+#footerimg::before
+{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(to top,#000000,transparent);
     z-index: 1000;
+}
+
+#footerimg img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    pointer-events:none;
+    overflow-wrap: normal;
 }
 
 section img
@@ -151,4 +183,19 @@ section img#planet3
 {
     background:linear-gradient(to top,#000000,transparent);
     z-index: 1000;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #ftver
+    {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #fthor
+    {
+        display: none!important;
+    }
 }

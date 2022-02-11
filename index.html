@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://ComSciZone.com.vn">
     <head>
         <meta charset="utf-8" />
@@ -24,7 +23,7 @@
             <img src="assets/img/planet2.png" id="planet2">
             <h2 id="text">ComSci Zone</h2>
             <img src="assets/img/planet3.png"  id="planet3">
-            <img src="assets/img/comet.png" style="width: 100%; height: 100%;" id="comet">
+            <img src="assets/img/comet.png" style="width: 60%; height: 60%;" id="comet">
             <a href="#sec" id="btn">Explore</a>
         </section>
         
@@ -103,14 +102,19 @@
             </p>
         </div>
 
-        <section id="footerimg">
-            <img src="assets/img/redmoon.png" style="height: fit-content;" id="redmoon">
-            <img src="assets/img/tree4.png" id="tree4">
-            <img src="assets/img/tree3.png" id="tree3">
-            <img src="assets/img/tree2.png" id="tree2">
-            <img src="assets/img/tree1.png" id="tree1">
-        </section>
-
+        <div id="footerimg" style="height: 150vh;">
+            <div id="ftver">
+                <img src="assets/img/bgfooter.png">
+            </div>
+            <div id="fthor">
+                <img src="assets/img/redmoon.png" style="height: fit-content;" id="redmoon">
+                <img src="assets/img/tree4.png" id="tree4">
+                <img src="assets/img/tree3.png" id="tree3">
+                <img src="assets/img/tree2.png" id="tree2">
+                <img src="assets/img/tree1.png" id="tree1">
+            </div>
+            
+        </div>
         <div class="sec" id="sec">
             <h2>[FOOTER]</h2>
             <p>
@@ -127,45 +131,6 @@
             </p>
         </div>
 
-
-        <script>
-            let stars = document.getElementById('stars');
-            let redmoon = document.getElementById('redmoon');
-            let tree1 = document.getElementById('tree1');
-            let tree2 = document.getElementById('tree2');
-            let tree3 = document.getElementById('tree3');
-            let tree4 = document.getElementById('tree4');
-            let btn = document.getElementById('btn');
-            let header = document.querySelector('header');
-            let text = document.getElementById('text');
-
-            let planet1 = document.getElementById('planet1');
-            let planet2 = document.getElementById('planet2');
-            let planet3 = document.getElementById('planet3');
-            let comet = document.getElementById('comet');
-
-            window.addEventListener('scroll', function () {
-                let value = window.scrollY;
-                stars.style.left = value * 0.25 + 'px';
-                planet1.style.left = value * 1 + 'px';
-                planet1.style.top = value * 1 + 'px';
-                planet2.style.left = value * 1 + 'px';
-                planet2.style.top = value * 1 + 'px';
-                planet3.style.left = value * -1 + 'px';
-                planet3.style.top = value * 1 + 'px';
-                comet.style.left = value * 2 + 'px';
-                comet.style.marginTop = value * 2 + 'px';
-                text.style.marginTop = value * 1.5 + 'px';
-                btn.style.marginTop = value * 1.5 + 'px';
-                header.style.top = value * 0.5 + 'px';
-
-                redmoon.style.top = value * 0.15 + 'px';
-                tree1.style.top = value * 0.15 + 'px';
-                tree2.style.top = value * 0.15 + 'px';
-                tree3.style.top = value * 0.15 + 'px';
-                tree4.style.top = value * 0.15 + 'px';
-            })
-        </script>
-        
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
