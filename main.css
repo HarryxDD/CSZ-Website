@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
 
-
 {
     margin: 0;
     padding: 0;
@@ -58,6 +57,9 @@ header ul li a.active
     background: #fff;
     color: #270404;
 }
+
+
+
 section
 {
     position: relative;
@@ -70,6 +72,28 @@ section
     overflow: hidden;
     scroll-behavior:smooth;
 }
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    pointer-events:none;
+}
+
+
+
+section img#planet2
+{
+    z-index: 10;
+}
+
+section img#planet3
+{
+    z-index: 10;
+}
 section::before
 {
     content:'';
@@ -77,9 +101,63 @@ section::before
     bottom: 0;
     width: 100%;
     height: 100px;
+    background:linear-gradient(to top,#300504,transparent);
+    z-index: 1000;
+}
+
+
+
+
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #270404;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(150px);
+}
+.sec{
+    position:relative;
+    padding: 100px;
+    background: #300504;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+#sec::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
     background:linear-gradient(to top,#000000,transparent);
     z-index: 1000;
 }
+
 
 #footerimg
 {
@@ -117,74 +195,6 @@ section::before
     pointer-events:none;
     overflow-wrap: normal;
 }
-
-section img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    pointer-events:none;
-}
-
-
-
-section img#planet2
-{
-    z-index: 10;
-}
-
-section img#planet3
-{
-    z-index: 10;
-}
-
-#text
-{
-    position: absolute;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 7.5vw;
-    z-index: 9;
-
-}
-
-#btn {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 40px;
-    background: #fff;
-    color: #270404;
-    font-size: 1.5em;
-    z-index: 9;
-    transform: translateY(150px);
-}
-.sec{
-    position:relative;
-    padding: 100px;
-    background: #000000;
-}
-.sec h2
-{
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #fff;
-}
-.sec p
-{
-    font-size: 1em;
-    color: #fff;
-}
-
-.sec::before
-{
-    background:linear-gradient(to top,#000000,transparent);
-    z-index: 1000;
-}
-
 
 @media screen and (min-width: 1024px) {
     #ftver
