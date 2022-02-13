@@ -2,7 +2,8 @@
 *
 
 
-{
+{   
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -185,6 +186,11 @@ section img#planet3
     z-index: 1000;
 }
 
+::selection
+{
+    background-color: #270404;
+    color: #fff;
+}
 
 @media screen and (min-width: 1024px) {
     #ftver
