@@ -8,7 +8,7 @@ let tree4 = document.getElementById('tree4');
 let btn = document.getElementById('btn');
 let header = document.querySelector('header');
 let text = document.getElementById('text');
-
+let text_2 = document.getElementById('text2');
 let planet1 = document.getElementById('planet1');
 let planet2 = document.getElementById('planet2');
 let planet3 = document.getElementById('planet3');
@@ -28,6 +28,7 @@ window.addEventListener('scroll', function () {
     comet.style.left = value * 1 + 'px';
     comet.style.marginTop = value * 1 + 'px';
     text.style.marginTop = value * 1.5 + 'px';
+    //text_2.style.marginTop = value 
     btn.style.marginTop = value * 1.5 + 'px';
     header.style.top = value * 0.5 + 'px';
 
@@ -35,5 +36,5 @@ window.addEventListener('scroll', function () {
     tree4.style.top = (value) * -0.03 + 500 + 'px';
     tree3.style.top = (value) * -0.07 + 550 + 'px';
     tree2.style.top = (value) * -0.1 + 600 + 'px';
-    tree1.style.top = (value) * -0.05 + 300 + 'px';
+    tree1.style.top = (value) * -0.05 + 250 + 'px';
 })
